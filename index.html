@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshay Boora | Frontend Developer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Lakshay Boora, a skilled frontend developer specializing in modern web technologies.">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-dark-900 text-gray-200 font-sans">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-dark-900 bg-opacity-90 flex justify-between items-center">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Lakshay Boora</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-200 hover:text-primary-400 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-800 px-4 py-2">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="py-2 px-4 rounded hover:bg-dark-700">Home</a>
+                <a href="#about" class="py-2 px-4 rounded hover:bg-dark-700">About</a>
+                <a href="#skills" class="py-2 px-4 rounded hover:bg-dark-700">Skills</a>
+                <a href="#projects" class="py-2 px-4 rounded hover:bg-dark-700">Projects</a>
+                <a href="#contact" class="py-2 px-4 rounded hover:bg-dark-700">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    Hero Section
+    <section id="home" class="min-h-screen flex items-center pt-20 pb-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Hi, I'm <span class="gradient-text">Lakshay Boora</span></h1>
+                <h2 class="text-2xl md:text-3xl text-gray-400 mb-6">Frontend Developer</h2>
+                <p class="text-lg text-gray-400 mb-8 max-w-lg">I create beautiful, functional, and responsive web experiences that help businesses grow and users engage.</p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">View Work</a>
+                    <a href="#contact" class="border border-primary-600 text-primary-400 hover:bg-primary-600 hover:text-white px-6 py-3 rounded-lg font-medium transition-colors">Contact Me</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center animate-slide-up">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 bg-primary-900 rounded-full overflow-hidden border-4 border-primary-700">
+                    <img src="img/Portfolio Img.jpeg" alt="Lakshay Boora -  Frontend Developer" class="w-100 h-90 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-dark-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://picsum.photos/500/400?random=2" alt="About Lakshay Boora" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4">Crafting Digital Experiences</h3>
+                    <p class="text-gray-400 mb-6">I'm a passionate frontend developer with over 1 years of experience building modern web applications. I specialize in creating intuitive user interfaces with clean, efficient code.</p>
+                    <p class="text-gray-400 mb-8">My approach combines technical expertise with an eye for design, ensuring that every project I work on is both visually appealing and highly functional across all devices.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div>
+                            <p class="text-primary-400 font-medium">Name:</p>
+                            <p class="text-gray-300">Lakshay Boora</p>
+                        </div>
+                        <div>
+                            <p class="text-primary-400 font-medium">Email:</p>
+                            <p class="text-gray-300">9amaura@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="text-primary-400 font-medium">Location:</p>
+                            <p class="text-gray-300">Sonipat, Haryana</p>
+                        </div>
+                        <div>
+                            <p class="text-primary-400 font-medium">Availability:</p>
+                            <p class="text-gray-300">Open to Work</p>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-primary-400 hover:text-primary-300">
+                        <span>Download Resume</span>
+                        <i class="fas fa-download ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-dark-800 p-6 rounded-lg card-hover">
+                    <div class="text-primary-400 text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Frontend Development</h3>
+                    <p class="text-gray-400">Building responsive and interactive user interfaces using modern JavaScript frameworks and libraries.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">HTML5</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">CSS3</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-800 p-6 rounded-lg card-hover">
+                    <div class="text-primary-400 text-4xl mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-400">Creating intuitive and visually appealing designs that enhance user experience and engagement.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">Figma</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">Adobe XD</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">Sketch</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">Wireframing</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">Prototyping</span>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-800 p-6 rounded-lg card-hover">
+                    <div class="text-primary-400 text-4xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Responsive Design</h3>
+                    <p class="text-gray-400">Ensuring websites work flawlessly across all devices and screen sizes with modern CSS techniques.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">Flexbox</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">CSS Grid</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+                        <span class="bg-primary-900 text-primary-300 px-3 py-1 rounded-full text-sm">Media Queries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-dark-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-dark-900 rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/600/400?random=3" alt="E-commerce Website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">E-commerce Platform</h3>
+                        <p class="text-gray-400 mb-4">A fully responsive e-commerce website with product filtering, cart functionality, and checkout process.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary-900 text-primary-300 px-2 py-1 rounded text-xs">React</span>
+                            <span class="bg-primary-900 text-primary-300 px-2 py-1 rounded text-xs">Node.js</span>
+                            <span class="bg-primary-900 text-primary-300 px-2 py-1 rounded text-xs">MongoDB</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-primary-400 hover:text-primary-300 text-sm">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-primary-400 hover:text-primary-300 text-sm">
+                                <i class="fab fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-900 rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/600/400?random=4" alt="Task Management App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
+                        <p class="text-gray-400 mb-4">A drag-and-drop task management application with user authentication and real-time updates.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary-900 text-primary-300 px-2 py-1 rounded text-xs">Vue.js</span>
+                            <span class="bg-primary-900 text-primary-300 px-2 py-1 rounded text-xs">Firebase</span>
+                            <span class="bg-primary-900 text-primary-300 px-2 py-1 rounded text-xs">Tailwind CSS</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-primary-400 hover:text-primary-300 text-sm">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-primary-400 hover:text-primary-300 text-sm">
+                                <i class="fab fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-900 rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/600/400?random=5" alt="Weather Dashboard" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Weather Dashboard</h3>
+                        <p class="text-gray-400 mb-4">A weather application that displays current conditions and forecasts for locations worldwide.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary-900 text-primary-300 px-2 py-1 rounded text-xs">JavaScript</span>
+                            <span class="bg-primary-900 text-primary-300 px-2 py-1 rounded text-xs">API Integration</span>
+                            <span class="bg-primary-900 text-primary-300 px-2 py-1 rounded text-xs">Chart.js</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-primary-400 hover:text-primary-300 text-sm">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-primary-400 hover:text-primary-300 text-sm">
+                                <i class="fab fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-primary-400 hover:text-primary-300">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Get In Touch</h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-300 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full bg-dark-800 border border-dark-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full bg-dark-800 border border-dark-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent" placeholder="Your email">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-300 mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full bg-dark-800 border border-dark-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-4 rounded-lg transition-colors">Send Message</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-dark-800 p-8 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="text-primary-400 text-xl mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Location</p>
+                                    <p class="text-gray-400">Sonipat, Haryana</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-primary-400 text-xl mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Email</p>
+                                    <p class="text-gray-400">9amaura@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-primary-400 text-xl mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Phone</p>
+                                    <p class="text-gray-400">+91 8930218198</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-medium mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-primary-400 text-xl">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary-400 text-xl">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary-400 text-xl">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary-400 text-xl">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400">© 2025 Lakshay Boora. All rights reserved.</p>
+                </div>
+                <div>
+                    <a href="#home" class="text-gray-400 hover:text-primary-400">
+                        <i class="fas fa-arrow-up"></i> Back to Top
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
